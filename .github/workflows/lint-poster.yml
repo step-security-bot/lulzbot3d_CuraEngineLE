@@ -5,6 +5,9 @@ on:
     workflows: [ "lint-tidier" ]
     types: [ completed ]
 
+permissions:
+  contents: read
+
 jobs:
   lint-poster-job:
     # Trigger the job only if the previous (insecure) workflow completed successfully
